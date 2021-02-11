@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="Wpf_Gardening_Project.Home"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Wpf_Gardening_Project"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="660">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="35"/>
+            <ColumnDefinition Width="625"/>
+            <ColumnDefinition Width="5"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="Gardening" Grid.Column="1" Grid.Row="0" Style="{StaticResource sty_heading1}" Margin="13,5,330,0"  Height="Auto" Width="Auto"/>
+
+        <Grid Grid.Column="1" Grid.Row="1">    
+            <ScrollViewer CanContentScroll="True" Grid.Row="1" Grid.Column="1">
+            <WrapPanel Margin="10,10,10,10">
+                <TextBlock Height="125" Margin="0,5,0,0" TextWrapping="Wrap" FontSize="13" Text="Gardening is the cultivation of plants. Gardening is considered by many people to be relaxing activity, mood boosting, helps in combat the loneliness, it connects to nature, Good Source of Vitamin D (Exposure to sunlight and fresh air helps the body to naturally produce Vitamin D - which is vital for a healthy immune system), source of health (by using organic vegetables, green leafy vegetables and fruits) and it keeps us physically fit. In this app we will introduce with the Mother Nature wherein we can be to explore the different types of gardening. Before that let us take a look into the past and see the evolution of the gardening from ancient to recent times."/>
+                <TextBlock Height="35"  Margin="0,3,0,0" TextWrapping="Wrap" FontSize="13" Text="History of Gardening is explained in three stages Ancient times, Middle Age and 18th Century as below"/>
+                <TextBlock Height="140" Width="420" Margin="0,0,0,0" TextWrapping="Wrap" FontSize="13" Text="Ancient Times - Forest gardening, a forest-based food production system, is the world's oldest form of gardening.[1] Forest gardens originated in prehistoric times along jungle-clad river banks and in the wet foothills of monsoon regions. In the gradual process of families improving their immediate environment, useful tree and vine species were identified, protected and improved while undesirable species were eliminated. Eventually foreign species were also selected and incorporated into the gardens"/>
+                    <Image Source="images\Home\forest.png" ToolTip="Robert Hart's forest garden in Shropshire, England" Margin="2" Width="130" HorizontalAlignment="Right" Height="150"/>
+                    <Image Source="images\Home\middleage.png" Margin="3" ToolTip="A gardener at work, 1607" Width="130" Height="150"/>
+                <TextBlock Height="250" Width="420"  Margin="0,0,10,10" HorizontalAlignment="Right" TextWrapping="Wrap" FontSize="13" Text="Middle Age - period of decline in gardens for aesthetic purposes, with regard to gardening. After the fall of Rome, gardening was done for the purpose of growing medicinal herbs and/or decorating church altars. Monasteries carried on a tradition of garden design and intense horticultural techniques during the medieval period in Europe. Generally, monastic garden types consisted of kitchen gardens, infirmary gardens, cemetery orchards, cloister garths and vineyards. The gardens in the 16th and 17th century were symmetric, proportioned and balanced with a more classical appearance. Most of these gardens were built around a central axis and they were divided into different parts by hedges. Gardens in Renaissance were adorned with sculptures, topiary and fountains. In the 17th century, knot gardens became popular along with the hedge mazes. By this time, Europeans started planting new flowers such as tulips, marigolds and sunflowers."/>
+                <TextBlock Height="190" Width="420"  Margin="0,0,10,10" HorizontalAlignment="Right" TextWrapping="Wrap" FontSize="13" Text="18th century - In the 18th century gardens were laid out more naturally, without any walls. This style of smooth undulating grass, which would run straight to the house, clumps, belts and scattering of trees and his serpentine lakes formed by invisibly damming small rivers, were a new style within the English landscape, a gardenless form of landscape gardening, which swept away almost all the remnants of previous formally patterned styles. The English landscape garden usually included a lake, lawns set against groves of trees, and often contained shrubberies, grottoes, pavilions, bridges and follies such as mock temples, Gothic ruins, bridges, and other picturesque architecture, designed to recreate an idyllic pastoral landscape."/>
+                    <Image Source="images\Home\18century.png" Margin="3" ToolTip="Sheffield Park Garden, a landscape garden originally laid out in the 18th century by Capability Brown" Width="130" Height="200"/>
+                    <TextBlock Height="60" Width="565" Margin="0,0,0,0" HorizontalAlignment="Right" TextWrapping="Wrap" FontSize="13" Text="In this app we will get to know some brief information on the different types of gardening and about some which can be grown in indoor, outdoor, water etc. What are the fertilizers used to help plant grow nicely."/>
+                    <Button Margin="0,0,0,0" Background="White" BorderBrush="White">
+                        <Image Source="images\Indoor\African Violets.png" Margin="0,0,10,0" ToolTip="Indoor Plant - African Violets" Width="170" Height="170"/>
+                    </Button>
+                    <Button Margin="0,0,0,0" Background="White" BorderBrush="White">
+                        <Image Source="images\Outdoor\Black-eyed Susan Vine.png" Margin="0,0,10,0" ToolTip="Outdoor Plant - Black-eyed Susan Vine" Width="170" Height="170"/>
+                    </Button>
+                    <Button Margin="0,0,0,0" Background="White" BorderBrush="White">
+                        <Image Source="images\Water\Water Hyacinth.png" Margin="0,0,10,0" ToolTip="Water Plant - Water Hyacinth" Width="170" Height="170"/>
+                    </Button>
+                    <Button Margin="0,0,0,0" Background="White" BorderBrush="White">
+                        <Image Source="images\Kit\Chillies.png" Margin="0,10,10,0" ToolTip="Kitchen Garden Plant - Chillies" Width="170" Height="170"/>
+                    </Button>
+                </WrapPanel>
+            </ScrollViewer>
+        </Grid>
+
+
+    </Grid>
+</UserControl>

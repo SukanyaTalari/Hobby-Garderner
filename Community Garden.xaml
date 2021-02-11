@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="Wpf_Gardening_Project.Community_Garden"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Wpf_Gardening_Project"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="660">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="35"/>
+            <ColumnDefinition Width="620"/>
+            <ColumnDefinition Width="5"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Community Gardening" Grid.Column="1" Grid.Row="0" Style="{StaticResource sty_heading1}" Margin="20,5,330,0"  Height="Auto" Width="Auto"/>
+
+        <Grid Grid.Row="1" Grid.Column="1">
+            <ScrollViewer CanContentScroll="True" Grid.Row="1" Grid.Column="1">
+                <WrapPanel Margin="10,10,10,10">
+                    <TextBlock Height="40"  Margin="10,10,0,0" TextWrapping="Wrap" FontSize="13" FontWeight="Bold" Text="A community garden is a single piece of land gardened collectively by a group of people."/>
+                    <TextBlock Height="130" Width="350"  Margin="10,10,0,0" TextWrapping="Wrap" FontSize="13" Text="Community gardens utilize either individual or shared plots on private or public land while producing fruit, vegetables, and/or plants grown for their attractive appearance. It is a semi public space where people in the surrounding neighborhood share the work and harvest of maintaining a garden space for growing fruits, vegetables, flowers or even livestock."/>
+                    <Image Source="images\Community\7.png" ToolTip="Community Gardening" Margin="3" Width="200" HorizontalAlignment="Right" Height="170"/>
+                    <TextBlock Height="20"  Margin="10,5,0,0" TextWrapping="Wrap" FontSize="13" Text="The way a community garden is set up and maintained can vary greatly from one to the next."/>
+
+                    <TextBlock Height="20" Width="500"  Margin="10,10,0,0" HorizontalAlignment="Right" FontWeight="Bold" TextWrapping="Wrap" FontSize="13" Text="Advantages of Community Gardening"/>
+                    <Image Source="images\Community\6.png" ToolTip="Students at Community Garden" Margin="25,0,0,0" Width="190" HorizontalAlignment="Right" Height="250"/>
+                    <TextBlock Height="200" Width="330"  Margin="10,0,0,0" TextWrapping="Wrap" FontSize="13" Text="Community gardens have several benefits to the people and the environment. These gardens create a sense of community among neighbors who are increasingly disconnected with each other. They create opportunities to provide healthy options in neighborhoods that are often food scarce. For example, in some remote rural areas, the nearest grocery store is prohibitively far away, and many residents rely on pre-packaged food from the gas stations and convenience stores. In these communities, such a garden is critical to the survival of the people in providing a well-rounded diet."/>
+                    <TextBlock Height="60"  Margin="10,0,0,0" TextWrapping="Wrap" FontSize="13" Text="The people working in the garden benefit from exercise and sunshine, as well as the therapeutic benefits of working in a garden. Weeding a garden is particularly effective in stress relief and provides mental health benefits to participants."/>
+                    <TextBlock Height="40"  Margin="10,0,0,0" TextWrapping="Wrap" FontSize="13" Text="Learning about the ways plants grow and the best conditions to help them thrive can provide the mental and intellectual stimulation of cultivating a new skill."/>
+                    <TextBlock Height="40"  Margin="10,0,0,0" TextWrapping="Wrap" FontSize="13" Text="Also, a community garden can change the culture of a neighborhood by providing a shared interest and activity that brings people together."/>
+                    <TextBlock Height="60"  Margin="10,0,0,0" TextWrapping="Wrap" FontSize="13" Text="One of the biggest benefits to a community garden is in creating a culture of self-sustainability. In a low-income neighborhood, a community garden may mean saving enough on groceries to provide for other household needs."/>
+                    <TextBlock Height="60"  Margin="10,0,0,0" TextWrapping="Wrap" FontSize="13" Text="People have become more and more separated from traditional food ways, and community gardens can replace the kind of independent living we once knew when everyone had their own backyard garden."/>
+                    <TextBlock Height="40"  Margin="10,0,0,0" TextWrapping="Wrap" FontSize="13" Text="Environmental benefits may be the increase of pollinator plants that can improve conditions for bees and other endangered pollinators."/>
+                    <TextBlock Height="40"  Margin="10,0,0,0" TextWrapping="Wrap" FontSize="13" Text="Plants also reduce the overall temperature compared to paved spaces, so these gardens are especially beneficial in urban areas."/>
+                    <TextBlock Height="60"  Margin="10,0,0,0" TextWrapping="Wrap" FontSize="13" Text="The environment of a community is improved by having an element of natural beauty so that rather than empty lots in some neighborhoods, the space between buildings can be filled with flowers or even food."/>
+
+                    <TextBlock Height="20" Width="500"  Margin="10,5,0,0" HorizontalAlignment="Right" FontWeight="Bold" TextWrapping="Wrap" FontSize="13" Text="Rules for the Community Gardening"/>
+                    <TextBlock Height="40"  Margin="10,0,0,0" HorizontalAlignment="Right" TextWrapping="Wrap" FontSize="13" Text="Because the community garden is an individualized structure, the 'rules' are entirely dependent on each individual garden space and determined by the organizer, or committee creating the gardens."/>
+                    <TextBlock Height="60"  Margin="10,0,0,0" HorizontalAlignment="Right" TextWrapping="Wrap" FontSize="13" Text="It is important to get feedback from garden participants because the nature of a community garden is collective and their voices should be included. Once a garden space or location has been established, it may help to identify the population the garden hopes to serve."/>
+                    <TextBlock Height="40"  Margin="10,0,0,0" HorizontalAlignment="Right" TextWrapping="Wrap" FontSize="13" Text="For example, a community garden located in a low-income neighborhood may be intended to serve the residents of that neighborhood."/>
+                    <TextBlock Height="40"  Margin="10,0,0,0" HorizontalAlignment="Right" TextWrapping="Wrap" FontSize="13" Text="The community garden connected to a food bank or soup kitchen might serve the clients who need those services. A community garden may also serve to provide income potential to participants by providing a space where they can grow produce to sell at a farmer's market, or flowers to sell in bars and restaurants downtown."/>
+                    <TextBlock Height="40"  Margin="10,0,0,0" HorizontalAlignment="Right" TextWrapping="Wrap" FontSize="13" Text="A community center or after-school group may create a community garden specifically catered to teaching youth about healthy eating and growing plants."/>
+
+                    <!--<Image Source="images\Community\7.png" ToolTip="" Margin="3" Width="200" HorizontalAlignment="Right" Height="170"/>-->
+
+
+                </WrapPanel>
+            </ScrollViewer>
+        </Grid>
+
+
+    </Grid>
+</UserControl>

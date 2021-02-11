@@ -1,0 +1,87 @@
+﻿<UserControl x:Class="Wpf_Gardening_Project.Water_Plants"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Wpf_Gardening_Project"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="660">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="35"/>
+            <ColumnDefinition Width="620"/>
+            <ColumnDefinition Width="5"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Water Plants" Grid.Column="1" Grid.Row="0" Style="{StaticResource sty_heading1}" Margin="20,5,330,0"  Height="Auto" Width="Auto"/>
+
+
+
+
+        <Grid Grid.Row="1" Grid.Column="1">
+            <ScrollViewer CanContentScroll="True" Grid.Row="1" Grid.Column="1">
+                <WrapPanel Margin="10,10,10,10">
+                    <TextBlock Height="20"  Margin="10,10,0,0" TextWrapping="Wrap" FontSize="13" FontWeight="Bold" Text="Aquatic plants are plants that have adapted to living in aquatic environments."/>
+                    <TextBlock Height="90"  Margin="10,5,0,0" TextWrapping="Wrap" FontSize="13" Text="The most common adaptation is the presence of lightweight internal packing cells, aerenchyma, but floating leaves and finely dissected leaves are also common. Aquatic plants can only grow in water or in soil that is frequently saturated with water. They are therefore a common component of wetlands. One of the largest aquatic plants in the world is the Amazon water lily; one of the smallest is the minute duckweed."/>
+                    <TextBlock Height="60"  Margin="10,5,0,0" TextWrapping="Wrap" FontSize="13" Text="Many small aquatic animals use plants such as duckweed for a home, or for protection from predators. Some other familiar examples of aquatic plants might include floating heart, water lily, lotus, and water hyacinth."/>
+
+                    <TextBlock Height="20" Width="500"  Margin="10,10,0,0" TextWrapping="Wrap" FontWeight="Bold" FontSize="13" Text="Advantages of Water plants."/>
+                    <TextBlock Height="55" Width="550"  Margin="10,7,0,0" TextWrapping="Wrap" FontSize="13" Text="1. Breathing Easier - A few plants orchids, succulents and epiphytic bromeliads takes carbon dioxide and releasing oxygen. Placing these plants in bedrooms has a great benefit of getting refresh air during the night."/>
+                    <TextBlock Height="75" Width="550"  Margin="10,3,0,0" TextWrapping="Wrap" FontSize="13" Text="2. Releasing Water - Place several plants together, and we can increase the humidity of a room, which helps keeping respiratory distresses at bay. Studies at the Agricultural University of Norway document that using plants in interior spaces decreases the incidence of dry skin, colds, sore throats and dry coughs."/>
+                    <TextBlock Height="145" Width="550"  Margin="10,3,0,0" TextWrapping="Wrap" FontSize="13" Text="3. Purifying Air - Plants remove toxins from air –up to 87% of volatile organic compounds (VOCs) every 24 hours, according to NASA research. VOCs include substances like formaldehyde (present in rugs, vinyl, cigarette smoke and grocery bags), benzene and trichloroethylene (both found in man-made fibers, inks, solvents and paint). Benzene is commonly found in high concentrations in study settings, where books and printed papers abound. Modern climate-controlled, air-tight buildings trap VOCs inside. The NASA research discovered that plants purify that trapped air by pulling contaminants into soil, where root zone microorganisms convert VOCs into food for the plant."/>
+                    <TextBlock Height="90" Width="550"  Margin="10,3,0,0" TextWrapping="Wrap" FontSize="13" Text="4. Improving Health - Adding plants to hospital rooms speeds recovery rates of surgical patients, according to researchers at Kansas State University. Compared to patients in rooms without plants, patients in rooms with plants request less pain medication, have lower heart rates and blood pressure, experience less fatigue and anxiety, and are released from the hospital sooner."/>
+                    <TextBlock Height="75" Width="550"  Margin="10,3,0,0" TextWrapping="Wrap" FontSize="13" Text="5. Sharpening Focus - A study at The Royal College of Agriculture in Circencester, England, found that students demonstrate 70% greater attentiveness when they're taughtin rooms containing plants. In the same study, attendance was also higher for lectures given in classrooms with plants."/>
+                    <TextBlock Height="20" Width="550"  Margin="10,10,0,0" TextWrapping="Wrap" FontSize="13" FontWeight="Bold" Text="Find some water plants below."/>
+
+                    <Button x:Name="btn_CallaLily" Click="btn_CallaLily_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Water\Calla Lily.png" ToolTip="Calla Lily" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_AmazonFrogbit" Click="btn_AmazonFrogbit_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Water\Amazon Frogbit.png" ToolTip="Amazon Frogbit" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_ParrotsFeather" Click="btn_ParrotsFeather_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Water\Parrots Feather1.png" ToolTip="Parrot's Feather" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_MosquitoFern" Click="btn_MosquitoFern_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Water\Mosquito Fern.png" ToolTip="Mosquito Fern" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_Hornwort" Click="btn_Hornwort_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Water\Hornwort.png" ToolTip="Hornwort" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_Duckweed" Click="btn_Duckweed_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Water\Duckweed.png" ToolTip="Duckweed" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_WaterHyacinth" Click="btn_WaterHyacinth_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Water\Water Hyacinth.png" ToolTip="Water Hyacinth" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_WaterSpangle" Click="btn_WaterSpangle_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Water\Water Spangle.png" ToolTip="Water Spangle" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_CreepingJenny" Click="btn_CreepingJenny_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Water\Creeping Jenny.png" ToolTip="Creeping Jenny" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_RoughHorsetail" Click="btn_RoughHorsetail_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Water\Rough Horsetail.png" ToolTip="Rough Horsetail" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_Lotus" Click="btn_Lotus_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Water\Lotus.png" ToolTip="Lotus" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_UmbrellaPalm" Click="btn_UmbrellaPalm_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Water\Umbrella Palm.png" ToolTip="Umbrella Palm" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_WaterForgetMeNot" Click="btn_WaterForgetMeNot_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Water\Water Forget-Me-Not.png" ToolTip="Water Forget-Me-Not" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_MosaicFlower" Click="btn_MosaicFlower_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Water\Mosaic Flower.png" ToolTip="Mosaic Flower" Height="170" Width="170"/>
+                    </Button>
+
+                </WrapPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</UserControl>

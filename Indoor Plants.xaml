@@ -1,0 +1,97 @@
+﻿<UserControl x:Class="Wpf_Gardening_Project.Indoor_Plants"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Wpf_Gardening_Project"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="660">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="35"/>
+            <ColumnDefinition Width="620"/>
+            <ColumnDefinition Width="5"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Indoor Plants" Grid.Column="1" Grid.Row="0" Style="{StaticResource sty_heading1}" Margin="20.8,3,329.2,1.4"  Height="Auto" Width="Auto"/>
+
+        <Grid Grid.Row="1" Grid.Column="1">
+            <ScrollViewer CanContentScroll="True" Margin="0,2,0,-2.4">
+                <WrapPanel Margin="10,10,10,10">
+                    <TextBlock Height="40"  Margin="10,10,0,0" TextWrapping="Wrap" FontSize="13" FontWeight="Bold" Text="Indoor gardens can be grown in any indoor space such as homes, offices, restaurants, schools, where ever we would like to see a little bit of life flourish. "/>
+                    <TextBlock Height="40"  Margin="10,5,0,0" TextWrapping="Wrap" FontSize="13" Text="Plants and flowers can create such a peaceful atmosphere that it makes sense we would try to bring a little bit of their beauty into our homes and workplaces."/>
+                    <TextBlock Height="60"  Margin="10,2,0,0" TextWrapping="Wrap" FontSize="13" Text="Many of us don't have the yard space for an outdoor garden or live in a climate that would destroy the plants they're attempting to grow. Even in a mild climate, some plants are too delicate to be left in the fickle hands of Mother Nature."/>
+                    <TextBlock Height="60"  Margin="10,2,0,0" TextWrapping="Wrap" FontSize="13" Text="An indoor garden allows us to be in complete control of their environment. Growing plants in home can be rewarding in so many ways. They can spruce the place up, they can keep give us company, and they're just overall incredibly pleasant to be around."/>
+                    <TextBlock Height="20"  Margin="10,2,0,0" TextWrapping="Wrap" FontSize="13" FontWeight="Bold" Text="Some benefits of Indoor plants"/>
+                    <TextBlock Height="80"  Margin="10,2,0,0" TextWrapping="Wrap" FontSize="13" Text="Everyone has their own reasons to grow plants indoors and we hardly need more reason than simply that it's fun, but there are some great benefits to growing a garden within our home. Like producing fresh air all the time, some plants take carbondioxide 24hrs and release oxygen which is good for us."/>
+                    <TextBlock Height="20"  Margin="10,2,0,0" TextWrapping="Wrap" FontSize="13" Text="Indoor plants helps to decor the space very attractively."/>
+                    <TextBlock Height="90"  Margin="10,2,0,0" TextWrapping="Wrap" FontSize="13" Text="They also help in educating the kids - By taking care of plants can be a lot of work. They need to remember to water them, make sure they're getting the right amount of sun, and adjust their environment if their needs are not being met. Letting kids help to grow an indoor garden can be a great hands on way to teach them about responsibility, caring for another living thing, and creating a routine that they'll need to stick to."/>
+                    <TextBlock Height="40"  Margin="10,2,0,0" TextWrapping="Wrap" FontSize="13" Text="It can also be an excellent tool to help teach them about plant biology, life cycles, ecosystems, and sustainable farming."/>
+                    <TextBlock Height="20" Width="500"  Margin="10,10,0,0" TextWrapping="Wrap" FontSize="13" FontWeight="Bold" Text="Find details of some Indoor plants listed below."/>
+
+
+                    <Button x:Name="btn_ChineseEvergreen" Click="btn_ChineseEvergreen_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Indoor\Chinese Evergreen1.png" ToolTip="Chinese Evergreen" Height="170" Width="170"/></Button>
+
+
+
+
+
+                    <Button x:Name="btn_AsparagusFern" Click="btn_AsparagusFern_Click" Margin="10,10,10,10" BorderBrush="White">
+                        <Image Source="images\Indoor\Asparagus Fern1.png" ToolTip="Asparagus Fern" Height="170" Width="170"/></Button>
+
+
+
+                    <Button x:Name="btn_FiddleFig" Click="btn_FiddleFig_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Indoor\Fiddle Leaf Fig.png" ToolTip="Fiddle Leaf Fig" Height="170" Width="170"/></Button>
+
+                    <Button x:Name="btn_GuianaChestnut" Click="btn_GuianaChestnut_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Indoor\Guiana Chestnut.png" ToolTip="Guiana Chestnut" Height="170" Width="170"/></Button>
+
+                    <Button x:Name="btn_ChineseMoneyPlant" Click="btn_ChineseMoneyPlant_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Indoor\Chinese Money Plant.png" ToolTip="Chinese Money Plant" Height="170" Width="170"/></Button>
+
+                    <Button x:Name="btn_Yucca" Click="btn_Yucca_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Indoor\Yucca.png" ToolTip="Yucca" Height="170" Width="170"/></Button>
+
+                    <Button x:Name="btn_AfricanViolets" Click="btn_AfricanViolets_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Indoor\African Violets.png" ToolTip="African Violets" Height="170" Width="170"/></Button>
+
+                    <Button x:Name="btn_Peperomia" Click="btn_Peperomia_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Indoor\Peperomia.png" ToolTip="Peperomia" Height="170" Width="170"/></Button>
+
+                    <Button x:Name="btn_AirPlant" Click="btn_AirPlant_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Indoor\Air Plant.png" ToolTip="Air Plant" Height="170" Width="170"/></Button>
+
+                    <Button x:Name="btn_SpiderPlant" Click="btn_SpiderPlant_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Indoor\Spider Plant.png" ToolTip="Spider Plant" Height="170" Width="170"/></Button>
+
+                    <Button x:Name="btn_PeaceLily" Click="btn_PeaceLily_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Indoor\Peace Lily.png" ToolTip="Peace Lily" Height="170" Width="170"/></Button>
+
+                    <Button x:Name="btn_AloeVeera" Click="btn_AloeVeera_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Indoor\Aloe Veera.png" ToolTip="Aloe Veera" Height="170" Width="170"/></Button>
+
+                    <Button x:Name="btn_EnglishIvy" Click="btn_EnglishIvy_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Indoor\English Ivy.png" ToolTip="English Ivy" Height="170" Width="170"/></Button>
+
+                    <Button x:Name="btn_DragonTree" Click="btn_DragonTree_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Indoor\Dragon Tree.png" ToolTip="Dragon Tree" Height="170" Width="170"/></Button>
+
+                </WrapPanel>
+            </ScrollViewer>
+        </Grid>
+
+
+        <!--<Grid x:Name="gridcontainer1" Grid.Column="1" Grid.Row="1" Height="400" Width="570">
+            <local:Chinese_Evergreen x:Name="ChiEve" Visibility="Collapsed"></local:Chinese_Evergreen>
+        </Grid>-->
+
+        
+        
+    </Grid>
+</UserControl>

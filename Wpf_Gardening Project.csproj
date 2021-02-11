@@ -1,0 +1,1286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1F28A0E9-17A2-4778-BC22-253710A662AA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Wpf_Gardening_Project</RootNamespace>
+    <AssemblyName>Wpf_Gardening Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Indoor\African Violets.xaml.cs">
+      <DependentUpon>African Violets.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Indoor\Air Plant.xaml.cs">
+      <DependentUpon>Air Plant.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Indoor\Aloe Veera.xaml.cs">
+      <DependentUpon>Aloe Veera.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Indoor\Asparagus Fern.xaml.cs">
+      <DependentUpon>Asparagus Fern.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Community Garden.xaml.cs">
+      <DependentUpon>Community Garden.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fertilizers.xaml.cs">
+      <DependentUpon>Fertilizers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Game Time.xaml.cs">
+      <DependentUpon>Game Time.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Hügelkultur.xaml.cs">
+      <DependentUpon>Hügelkultur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Indoor\Chinese Money Plant.xaml.cs">
+      <DependentUpon>Chinese Money Plant.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Indoor\ChineseEvergreen.xaml.cs">
+      <DependentUpon>ChineseEvergreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Indoor\Dragon Tree.xaml.cs">
+      <DependentUpon>Dragon Tree.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Indoor\English Ivy.xaml.cs">
+      <DependentUpon>English Ivy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Indoor\Fiddle Leaf Fig.xaml.cs">
+      <DependentUpon>Fiddle Leaf Fig.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Indoor\Guiana Chestnut.xaml.cs">
+      <DependentUpon>Guiana Chestnut.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Indoor\Peace Lily.xaml.cs">
+      <DependentUpon>Peace Lily.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Indoor\Peperomia.xaml.cs">
+      <DependentUpon>Peperomia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Indoor\Spider Plant.xaml.cs">
+      <DependentUpon>Spider Plant.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Indoor\Yucca.xaml.cs">
+      <DependentUpon>Yucca.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kitchen Garden.xaml.cs">
+      <DependentUpon>Kitchen Garden.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kitchen\Beans.xaml.cs">
+      <DependentUpon>Beans.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kitchen\Beet Roots.xaml.cs">
+      <DependentUpon>Beet Roots.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kitchen\Bell Peppers.xaml.cs">
+      <DependentUpon>Bell Peppers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kitchen\Cabbage.xaml.cs">
+      <DependentUpon>Cabbage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kitchen\Carrots.xaml.cs">
+      <DependentUpon>Carrots.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kitchen\Chillies.xaml.cs">
+      <DependentUpon>Chillies.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kitchen\Corinder.xaml.cs">
+      <DependentUpon>Corinder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kitchen\Lemon.xaml.cs">
+      <DependentUpon>Lemon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kitchen\Lettuce.xaml.cs">
+      <DependentUpon>Lettuce.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kitchen\Mint.xaml.cs">
+      <DependentUpon>Mint.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kitchen\Oregano.xaml.cs">
+      <DependentUpon>Oregano.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kitchen\Radishes.xaml.cs">
+      <DependentUpon>Radishes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kitchen\Tomatoes.xaml.cs">
+      <DependentUpon>Tomatoes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Kitchen\Zucchini.xaml.cs">
+      <DependentUpon>Zucchini.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Content.cs" />
+    <Compile Include="Organic Garden.xaml.cs">
+      <DependentUpon>Organic Garden.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Outdoor\Begonia.xaml.cs">
+      <DependentUpon>Begonia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Outdoor\Black-eyed Susan Vine.xaml.cs">
+      <DependentUpon>Black-eyed Susan Vine.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Outdoor\Calibrachoa.xaml.cs">
+      <DependentUpon>Calibrachoa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Outdoor\Canna Lily.xaml.cs">
+      <DependentUpon>Canna Lily.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Outdoor\Cardinal Climber.xaml.cs">
+      <DependentUpon>Cardinal Climber.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Outdoor\Chrysanthemum.xaml.cs">
+      <DependentUpon>Chrysanthemum.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Outdoor\Cuphea.xaml.cs">
+      <DependentUpon>Cuphea.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Outdoor\Herbs.xaml.cs">
+      <DependentUpon>Herbs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Outdoor\Hydrangea.xaml.cs">
+      <DependentUpon>Hydrangea.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Outdoor\Lavender.xaml.cs">
+      <DependentUpon>Lavender.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Outdoor\Mandevilla.xaml.cs">
+      <DependentUpon>Mandevilla.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Outdoor\Rose.xaml.cs">
+      <DependentUpon>Rose.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Outdoor\Strawberry.xaml.cs">
+      <DependentUpon>Strawberry.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Outdoor\Verbena.xaml.cs">
+      <DependentUpon>Verbena.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Plants.cs" />
+    <Compile Include="Water Plants.xaml.cs">
+      <DependentUpon>Water Plants.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Water\Amazon Frogbit.xaml.cs">
+      <DependentUpon>Amazon Frogbit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Water\Calla Lily.xaml.cs">
+      <DependentUpon>Calla Lily.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Water\Creeping Jenny.xaml.cs">
+      <DependentUpon>Creeping Jenny.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Water\Duckweed.xaml.cs">
+      <DependentUpon>Duckweed.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Water\Hornwort.xaml.cs">
+      <DependentUpon>Hornwort.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Water\Lotus.xaml.cs">
+      <DependentUpon>Lotus.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Water\Mosaic Flower.xaml.cs">
+      <DependentUpon>Mosaic Flower.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Water\Mosquito Fern.xaml.cs">
+      <DependentUpon>Mosquito Fern.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Water\Parrots Feather.xaml.cs">
+      <DependentUpon>Parrots Feather.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Water\Rough Horsetail.xaml.cs">
+      <DependentUpon>Rough Horsetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Water\Umbrella Palm.xaml.cs">
+      <DependentUpon>Umbrella Palm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Water\Water Forget-Me-Not.xaml.cs">
+      <DependentUpon>Water Forget-Me-Not.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Water\Water Hyacinth.xaml.cs">
+      <DependentUpon>Water Hyacinth.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Water\Water Spangle.xaml.cs">
+      <DependentUpon>Water Spangle.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Indoor\African Violets.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Indoor\Air Plant.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Indoor\Aloe Veera.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Indoor\Asparagus Fern.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Community Garden.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fertilizers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Game Time.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Hügelkultur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Indoor Plants.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Indoor\Chinese Money Plant.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Indoor\ChineseEvergreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Indoor\Dragon Tree.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Indoor\English Ivy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Indoor\Fiddle Leaf Fig.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Indoor\Guiana Chestnut.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Indoor\Peace Lily.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Indoor\Peperomia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Indoor\Spider Plant.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Indoor\Yucca.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kitchen Garden.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kitchen\Beans.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kitchen\Beet Roots.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kitchen\Bell Peppers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kitchen\Cabbage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kitchen\Carrots.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kitchen\Chillies.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kitchen\Corinder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kitchen\Lemon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kitchen\Lettuce.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kitchen\Mint.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kitchen\Oregano.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kitchen\Radishes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kitchen\Tomatoes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Kitchen\Zucchini.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Indoor Plants.xaml.cs">
+      <DependentUpon>Indoor Plants.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Organic Garden.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Outdoor Plants.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Outdoor\Begonia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Outdoor\Black-eyed Susan Vine.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Outdoor\Calibrachoa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Outdoor\Canna Lily.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Outdoor\Cardinal Climber.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Outdoor\Chrysanthemum.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Outdoor\Cuphea.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Outdoor\Herbs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Outdoor\Hydrangea.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Outdoor\Lavender.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Outdoor\Mandevilla.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Outdoor\Rose.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Outdoor\Strawberry.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Outdoor\Verbena.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Water Plants.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Water\Amazon Frogbit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Water\Calla Lily.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Water\Creeping Jenny.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Water\Duckweed.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Water\Hornwort.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Water\Lotus.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Water\Mosaic Flower.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Water\Mosquito Fern.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Water\Parrots Feather.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Water\Rough Horsetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Water\Umbrella Palm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Water\Water Forget-Me-Not.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Water\Water Hyacinth.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Water\Water Spangle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Outdoor Plants.xaml.cs">
+      <DependentUpon>Outdoor Plants.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Icons\community.png" />
+    <Resource Include="images\Icons\fertilizer.png" />
+    <Resource Include="images\Icons\game.png" />
+    <Resource Include="images\Icons\home.png" />
+    <Resource Include="images\Icons\hugelkultur.png" />
+    <Resource Include="images\Icons\indoor.png" />
+    <Resource Include="images\Icons\kitchen.png" />
+    <Resource Include="images\Icons\organic.png" />
+    <Resource Include="images\Icons\outdoor.png" />
+    <Resource Include="images\Icons\water.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Indoor\African Violets.png" />
+    <Resource Include="images\Indoor\Air Plant.png" />
+    <Resource Include="images\Indoor\Aloe Veera.png" />
+    <Resource Include="images\Indoor\Asparagus Fern1.png" />
+    <Resource Include="images\Indoor\Beans.png" />
+    <Resource Include="images\Indoor\Chinese Evergreen1.png" />
+    <Resource Include="images\Indoor\Chinese Money Plant.png" />
+    <Resource Include="images\Indoor\Dragon Tree.png" />
+    <Resource Include="images\Indoor\English Ivy.png" />
+    <Resource Include="images\Indoor\Fiddle Leaf Fig.png" />
+    <Resource Include="images\Indoor\Guiana Chestnut.png" />
+    <Resource Include="images\Indoor\Indoor Garden.png" />
+    <Resource Include="images\Indoor\Peace Lily.png" />
+    <Resource Include="images\Indoor\Peperomia.png" />
+    <Resource Include="images\Indoor\Spider Plant.png" />
+    <Resource Include="images\Indoor\Yucca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Outdoor\Begonia.png" />
+    <Resource Include="images\Outdoor\Black-eyed Susan Vine.png" />
+    <Resource Include="images\Outdoor\Calibrachoa.png" />
+    <Resource Include="images\Outdoor\Canna Lily.png" />
+    <Resource Include="images\Outdoor\Cardinal Climber.png" />
+    <Resource Include="images\Outdoor\Chrysanthemum.png" />
+    <Resource Include="images\Outdoor\Cuphea.png" />
+    <Resource Include="images\Outdoor\Herbs.png" />
+    <Resource Include="images\Outdoor\Hydrangea1.png" />
+    <Resource Include="images\Outdoor\Lavender.png" />
+    <Resource Include="images\Outdoor\Mandevilla.png" />
+    <Resource Include="images\Outdoor\Outdoor Garden.png" />
+    <Resource Include="images\Outdoor\Rose.png" />
+    <Resource Include="images\Outdoor\Strawberry.png" />
+    <Resource Include="images\Outdoor\Verbena.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Water\Amazon Frogbit.png" />
+    <Resource Include="images\Water\Calla Lily.png" />
+    <Resource Include="images\Water\Creeping Jenny.png" />
+    <Resource Include="images\Water\Duckweed.png" />
+    <Resource Include="images\Water\Hornwort.png" />
+    <Resource Include="images\Water\Lotus.png" />
+    <Resource Include="images\Water\Mosaic Flower.png" />
+    <Resource Include="images\Water\Mosquito Fern.png" />
+    <Resource Include="images\Water\Parrots Feather1.png" />
+    <Resource Include="images\Water\Rough Horsetail.png" />
+    <Resource Include="images\Water\Umbrella Palm.png" />
+    <Resource Include="images\Water\Water Forget-Me-Not.png" />
+    <Resource Include="images\Water\Water Hyacinth.png" />
+    <Resource Include="images\Water\Water Spangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Kit\Beans.png" />
+    <Resource Include="images\Kit\Beet Roots.png" />
+    <Resource Include="images\Kit\Bell Peppers.png" />
+    <Resource Include="images\Kit\Cabbage.png" />
+    <Resource Include="images\Kit\Carrots.png" />
+    <Resource Include="images\Kit\Chillies.png" />
+    <Resource Include="images\Kit\Container garden on front porch.png" />
+    <Resource Include="images\Kit\Corinder.png" />
+    <Resource Include="images\Kit\Lemon.png" />
+    <Resource Include="images\Kit\Lettuce.png" />
+    <Resource Include="images\Kit\Mint.png" />
+    <Resource Include="images\Kit\Oregano.png" />
+    <Resource Include="images\Kit\Radishes.png" />
+    <Resource Include="images\Kit\Tomatoes.png" />
+    <Resource Include="images\Kit\ZUCCHINI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Community\1.png" />
+    <Resource Include="images\Community\2.png" />
+    <Resource Include="images\Community\3.png" />
+    <Resource Include="images\Community\4.png" />
+    <Resource Include="images\Community\6.png" />
+    <Resource Include="images\Community\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Contain\1.png" />
+    <Resource Include="images\Contain\10.png" />
+    <Resource Include="images\Contain\11.png" />
+    <Resource Include="images\Contain\2.png" />
+    <Resource Include="images\Contain\3.png" />
+    <Resource Include="images\Contain\4.png" />
+    <Resource Include="images\Contain\5.png" />
+    <Resource Include="images\Contain\6.png" />
+    <Resource Include="images\Contain\7.png" />
+    <Resource Include="images\Contain\8.png" />
+    <Resource Include="images\Contain\9.png" />
+    <Resource Include="images\Contain\Container garden on front porch.png" />
+    <Resource Include="images\Contain\Root-bound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Hügelkultur\Hügelkultur.png" />
+    <Resource Include="images\Hügelkultur\Hügelkultur1.png" />
+    <Resource Include="images\Hügelkultur\Hügelkultur2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\African Violets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Organic\1.png" />
+    <Resource Include="images\Organic\2.png" />
+    <Resource Include="images\Organic\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Home\18century.png" />
+    <Resource Include="images\Home\forest.png" />
+    <Resource Include="images\Home\middleage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\African Violet1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\African Violet2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\African Violet3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Indoor\African Violets\African Violet1.png" />
+    <Resource Include="images\Indoor\African Violets\African Violet2.png" />
+    <Resource Include="images\Indoor\African Violets\African Violet3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Air Plant1.png" />
+    <Resource Include="images\Air Plant2.png" />
+    <Resource Include="images\Air Plant3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Air Plant1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Air Plant2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Air Plant3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Aloe_Veera1.png" />
+    <Resource Include="images\Aloe_Veera2.png" />
+    <Resource Include="images\Aloe_Veera3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Aloe_Veera1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Aloe_Veera2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Aloe_Veera3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Asparagus Fern1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Asparagus Fern2.png" />
+    <Resource Include="images\Asparagus Fern3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Asparagus Fern1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Asparagus Fern2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Asparagus Fern3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Chinese Money Plant1.png" />
+    <Resource Include="images\Chinese Money Plant2.png" />
+    <Resource Include="images\Chinese Money Plant3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Chinese Money Plant1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Chinese Money Plant2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Chinese Money Plant3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Chinese Evergreen1.png" />
+    <Resource Include="images\Chinese Evergreen2.png" />
+    <Resource Include="images\Chinese Evergreen3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Chinese Evergreen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Chinese Evergreen2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Chinese Evergreen3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Dragon Tree1.png" />
+    <Resource Include="Indoor\Dragon Tree2.png" />
+    <Resource Include="Indoor\Dragon Tree3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Dragon Tree1.png" />
+    <Resource Include="images\Dragon Tree2.png" />
+    <Resource Include="images\Dragon Tree3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\English Ivy1.png" />
+    <Resource Include="images\English Ivy2.png" />
+    <Resource Include="images\English Ivy3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\English Ivy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\English Ivy2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\English Ivy3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Fiddle Leaf Fig1.png" />
+    <Resource Include="images\Fiddle Leaf Fig2.png" />
+    <Resource Include="images\Fiddle Leaf Fig3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Fiddle Leaf Fig1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Fiddle Leaf Fig2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Fiddle Leaf Fig3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Guiana Chestnut1.png" />
+    <Resource Include="images\Guiana Chestnut2.png" />
+    <Resource Include="images\Guiana Chestnut3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Guiana Chestnut1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Guiana Chestnut2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Guiana Chestnut3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Peace Lily1.png" />
+    <Resource Include="images\Peace Lily2.png" />
+    <Resource Include="images\Peace Lily3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Peace Lily1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Peace Lily2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Peace Lily3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Peperomia1.png" />
+    <Resource Include="images\Peperomia2.png" />
+    <Resource Include="images\Peperomia3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Peperomia1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Peperomia2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Peperomia3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Spider Plant1.png" />
+    <Resource Include="images\Spider Plant2.png" />
+    <Resource Include="images\Spider Plant3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Spider Plant1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Spider Plant2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Spider Plant3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Yucca1.png" />
+    <Resource Include="images\Yucca2.png" />
+    <Resource Include="images\Yucca3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Yucca1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Yucca2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Indoor\Yucca3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Begonia1.png" />
+    <Resource Include="images\Begonia2.png" />
+    <Resource Include="images\Begonia3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Begonia1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Begonia2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Begonia3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Black eyed Susan Vine1.png" />
+    <Resource Include="images\Black eyed Susan Vine2.png" />
+    <Resource Include="images\Black eyed Susan Vine3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Black eyed Susan Vine1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Black eyed Susan Vine3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Black eyed Susan Vine2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Calibrachoa1.png" />
+    <Resource Include="images\Calibrachoa2.png" />
+    <Resource Include="images\Calibrachoa3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Calibrachoa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Calibrachoa2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Calibrachoa3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Canna Lily1.png" />
+    <Resource Include="images\Canna Lily2.png" />
+    <Resource Include="images\Canna Lily3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Canna Lily1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Canna Lily2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Canna Lily3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Cardinal Climber1.png" />
+    <Resource Include="images\Cardinal Climber2.png" />
+    <Resource Include="images\Cardinal Climber3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Cardinal Climber1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Cardinal Climber2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Cardinal Climber3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Chrysanthemum1.png" />
+    <Resource Include="images\Chrysanthemum2.png" />
+    <Resource Include="images\Chrysanthemum3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Chrysanthemum1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Chrysanthemum2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Chrysanthemum3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Cuphea1.png" />
+    <Resource Include="images\Cuphea2.png" />
+    <Resource Include="images\Cuphea3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Cuphea1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Cuphea2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Cuphea3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Herbs1.png" />
+    <Resource Include="images\Herbs2.png" />
+    <Resource Include="images\Herbs3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Herbs1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Herbs2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Herbs3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Hydrangea1.png" />
+    <Resource Include="images\Hydrangea2.png" />
+    <Resource Include="images\Hydrangea3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Hydrangea1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Hydrangea2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Hydrangea3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Lavender1.png" />
+    <Resource Include="images\Lavender2.png" />
+    <Resource Include="images\Lavender3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Lavender1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Lavender2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Lavender3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Mandevilla1.png" />
+    <Resource Include="images\Mandevilla2.png" />
+    <Resource Include="images\Mandevilla3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Mandevilla1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Mandevilla2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Mandevilla3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Rose1.png" />
+    <Resource Include="images\Rose2.png" />
+    <Resource Include="images\Rose3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Rose1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Rose2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Rose3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Strawberry1.png" />
+    <Resource Include="images\Strawberry2.png" />
+    <Resource Include="images\Strawberry3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Strawberry1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Strawberry2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Strawberry3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Verbena1.png" />
+    <Resource Include="images\Verbena2.png" />
+    <Resource Include="images\Verbena3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Verbena1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Verbena2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Outdoor\Verbena3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Amazo Frogbit1.png" />
+    <Resource Include="images\Amazo Frogbit2.png" />
+    <Resource Include="images\Amazo Frogbit3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Amazo Frogbit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Amazo Frogbit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Amazo Frogbit3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Calla Lily1..png" />
+    <Resource Include="images\Calla Lily2.png" />
+    <Resource Include="images\Calla Lily3..png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Calla Lily1..png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Calla Lily2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Calla Lily3..png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Creeping Jenny1.png" />
+    <Resource Include="images\Creeping Jenny2.png" />
+    <Resource Include="images\Creeping Jenny3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Creeping Jenny1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Creeping Jenny2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Creeping Jenny3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Duckweed1.png" />
+    <Resource Include="images\Duckweed2.png" />
+    <Resource Include="images\Duckweed3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Duckweed1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Duckweed2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Duckweed3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Hornwort1.png" />
+    <Resource Include="images\Hornwort2.png" />
+    <Resource Include="images\Hornwort3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Hornwort1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Hornwort2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Hornwort3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Lotus1.png" />
+    <Resource Include="images\Lotus2.png" />
+    <Resource Include="images\Lotus3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Lotus1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Lotus2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Lotus3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Mosaic Flower1.png" />
+    <Resource Include="images\Mosaic Flower2.png" />
+    <Resource Include="images\Mosaic Flower3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Mosaic Flower1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Mosaic Flower2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Mosaic Flower3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Mosquito_Fern1.png" />
+    <Resource Include="images\Mosquito_Fern2.png" />
+    <Resource Include="images\Mosquito_Fern3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Mosquito_Fern1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Mosquito_Fern2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Mosquito_Fern3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Parrots  Feather1.png" />
+    <Resource Include="images\Parrots  Feather2.png" />
+    <Resource Include="images\Parrots  Feather3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Parrots  Feather1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Parrots  Feather2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Parrots  Feather3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Rough Horsetail1.png" />
+    <Resource Include="images\Rough Horsetail2.png" />
+    <Resource Include="images\Rough Horsetail3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Rough Horsetail1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Rough Horsetail2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Rough Horsetail3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Umbrella Palm1.png" />
+    <Resource Include="images\Umbrella Palm2.png" />
+    <Resource Include="images\Umbrella Palm3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Umbrella Palm1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Umbrella Palm2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Umbrella Palm3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Water Forget Me Not1.png" />
+    <Resource Include="images\Water Forget Me Not2.png" />
+    <Resource Include="images\Water Forget Me Not3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Water Forget Me Not1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Water Forget Me Not2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Water Forget Me Not3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Water Hyacinth1.png" />
+    <Resource Include="images\Water Hyacinth2.png" />
+    <Resource Include="images\Water Hyacinth3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Water Hyacinth1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Water Hyacinth2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Water Hyacinth3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Water Spangle1.png" />
+    <Resource Include="images\Water Spangle2.png" />
+    <Resource Include="images\Water Spangle3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Water Spangle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Water Spangle2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Water\Water Spangle3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Tomatoes1.png" />
+    <Resource Include="images\Tomatoes2.png" />
+    <Resource Include="images\Tomatoes3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Kitchen\Tomatoes1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Kitchen\Tomatoes2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Kitchen\Tomatoes3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Kitchen\Beans.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

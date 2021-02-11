@@ -1,0 +1,88 @@
+﻿<UserControl x:Class="Wpf_Gardening_Project.Outdoor_Plants"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Wpf_Gardening_Project"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="660">
+    <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="35"/>
+            <ColumnDefinition Width="620"/>
+            <ColumnDefinition Width="5"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Outdoor Plants" Grid.Column="1" Grid.Row="0" Style="{StaticResource sty_heading1}" Margin="20,5,330,0"  Height="Auto" Width="Auto"/>
+
+        <Grid Grid.Row="1" Grid.Column="1">
+            <ScrollViewer CanContentScroll="True" Grid.Row="1" Grid.Column="1">
+                <WrapPanel Margin="10,10,10,10">
+                    <TextBlock Height="75"  Margin="10,10,0,0" TextWrapping="Wrap" FontSize="13" FontWeight="Bold" Text="Plants have always been a natural part of our lives. ... When space allows, there can be large expanses of lawns, an oasis of planted trees, or elaborate shrub plantings. When space is limited, hanging baskets and container gardens help create and fill the need for a natural connection."/>
+                    <TextBlock Height="20" Width="500"  Margin="10,10,0,0" TextWrapping="Wrap" FontSize="13" FontWeight="Bold" Text="Some benefits of the outdoor gardening"/>
+                    <TextBlock Height="53"  Margin="10,5,0,0" TextWrapping="Wrap" FontSize="13" Text="1. Reduce risk of stroke - According to The British Medical Journal gardening can help reduce the risk of a heart attack or stroke. When looking at the age group 60+ gardening can help prolong life by up to as much as 30%."/>
+                    <TextBlock Height="90"  Margin="10,3,0,0" TextWrapping="Wrap" FontSize="13" Text="2. Burns calories - Gardening can be a hard workout, depending on what we do and for how long. A simple 1 hour of gardening could help us to burn up to 330 calories. Also, if we garden for three to four hours, we could easily burn as many calories as we would from one hour in the gym. This can be accomplished through basic gardening tasks, such as raking leaves, mowing the lawn or trimming hedges."/>
+                    <TextBlock Height="90"  Margin="10,3,0,0" TextWrapping="Wrap" FontSize="13" Text="3. Stress relief - Gardening as a form of exercise can be good for us as it helps to release endorphins, the hormone that helps to make us feel satisfied and relaxed. Furthermore, being outside in direct contact with the sunlight could help improve our mood. Similar to that of Seasonal Affective Disorder, a type of depression that occurs during the winter months where sunlight is restricted."/>
+                    <TextBlock Height="73"  Margin="10,3,0,0" TextWrapping="Wrap" FontSize="13" Text="4. Responsibility - Gardening activities provide purpose and a sense of worth. Having a living thing to care for, such as the plants in our garden, gives us a sense of responsibility. It could be highly beneficial for us suffering from mental health issues as it can be a simple activity to keep us busy and occupied."/>
+                    <TextBlock Height="90"  Margin="10,3,0,0" TextWrapping="Wrap" FontSize="13" Text="5. Live in the moment - Being outside in our garden and experiencing the change of seasons as and when they happen can help us feel connected to the world. This is like sitting in an office all day with only a glimpse out of a window can make time go quickly before we know it it'll be New Year's Eve again. Therefore spending the time outside and experiencing the flowers as they bloom can be a great way to keep track of time."/>
+                    <TextBlock Height="125"  Margin="10,3,0,0" TextWrapping="Wrap" FontSize="13" Text="6. Free anger therapy - If we have experienced a bad day simply grabbing a shovel and doing some heavy digging or drastic pruning could be a great way to rid of your built up of negative feelings. Furthermore, destroying unwanted brambles and weeds is a convenient way to exert anger as if you don't destroy them they may soon take over our garden!  Distracting ourself from our life's stress through gardening is an excellent technique because this activity is connected to growth and renewal. Our plants will swamp our garden space if we don't cut them so mow them down whenever we feel troubled."/>
+                    <TextBlock Height="75"  Margin="10,3,0,0" TextWrapping="Wrap" FontSize="13" Text="7. Sensory - Spending time in the garden is a great way to enhance our sensory system. With all the different smells, colours and textures of plants around we can easily make the most of our body's abilities. This could be particularly valuable for young children who are learning about the different senses they have."/>
+
+
+                    <TextBlock Height="20" Width="500"  Margin="10,10,0,0" TextWrapping="Wrap" FontSize="13" FontWeight="Bold" Text="Explore about some of the outdoor plants listed below."/>
+
+
+                    <Button x:Name="btn_Hydrangea" Click="btn_Hydrangea_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Outdoor\Hydrangea1.png" ToolTip="Hydrangea" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_Cuphea" Click="btn_Cuphea_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Outdoor\Cuphea.png" ToolTip="Cuphea" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_Lavender" Click="btn_Lavender_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Outdoor\Lavender.png" ToolTip="Lavender" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_CannaLily" Click="btn_CannaLily_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Outdoor\Canna Lily.png" ToolTip="Canna Lily" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_Strawberry" Click="btn_Strawberry_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Outdoor\Strawberry.png" ToolTip="Strawberry" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_Mandevilla" Click="btn_Mandevilla_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Outdoor\Mandevilla.png" ToolTip="Mandevilla" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_Chrysanthemum" Click="btn_Chrysanthemum_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Outdoor\Chrysanthemum.png" ToolTip="Chrysanthemum" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_Rose" Click="btn_Rose_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Outdoor\Rose.png" ToolTip="Rose" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_SusanVine" Click="btn_SusanVine_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Outdoor\Black-eyed Susan Vine.png" ToolTip="Black-eyed Susan Vine" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_Verbena" Click="btn_Verbena_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Outdoor\Verbena.png" ToolTip="Verbena" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_CardinalClimber" Click="btn_CardinalClimber_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Outdoor\Cardinal Climber.png" ToolTip="Cardinal Climber" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_Calibrachoa" Click="btn_Calibrachoa_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Outdoor\Calibrachoa.png" ToolTip="Calibrachoa" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_Herbs" Click="btn_Herbs_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Outdoor\Herbs.png" ToolTip="Herbs" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_Begonia" Click="btn_Begonia_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Outdoor\Begonia.png" ToolTip="Begonia" Height="170" Width="170"/>
+                    </Button>
+
+                </WrapPanel>
+            </ScrollViewer>
+        </Grid>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="Wpf_Gardening_Project.Hügelkultur"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Wpf_Gardening_Project"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="660">
+    <Grid>
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="35"/>
+            <ColumnDefinition Width="620"/>
+            <ColumnDefinition Width="5"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Hügelkultur Gardening" Grid.Column="1" Grid.Row="0" Style="{StaticResource sty_heading1}" Margin="20,5,330,0"  Height="Auto" Width="Auto"/>
+
+        <Grid Grid.Row="1" Grid.Column="1">
+            <ScrollViewer CanContentScroll="True" Grid.Row="1" Grid.Column="1">
+                <WrapPanel Margin="10,10,10,10">
+                    <Image Source="images\Hügelkultur\Hügelkultur.png" ToolTip="Hügelkultur" Margin="3" Width="200" HorizontalAlignment="Right" Height="170"/>
+                    <TextBlock Height="215" Width="360"  Margin="10,10,0,0" TextWrapping="Wrap" FontSize="13" Text="Hügelkultur is a German word meaning mound culture or hill culture. It is a horticultural technique where a mound constructed from decaying wood debris and other compostable biomass plant materials is later (or immediately) planted as a raised bed. Adopted by permaculture advocates, it is suggested the technique helps to improve soil fertility, water retention, and soil warming, thus benefiting plants grown on or near such mounds. Inspired by observation of the diversity and success of plants growing in a pile of woody debris, mound culture is suggested (as opposed to flatland culture). This was also posited as an easy way to utilise woody debris without burning, which was illegal. "/>
+                    <TextBlock Height="300" Width="360" Margin="10,10,0,0" TextWrapping="Wrap" FontSize="13" Text="Mounds are constructed by piling logs, branches, plant waste, compost and additional soil directly on the ground. The pile has the form of a pyramid. The sides of the two slopes both have a grade of between 65 and 80 degrees.[10] The beds are usually about 3 feet (0.91 m) by 6 feet (1.8 m) in area and about 3 feet (0.91 m) high.[1] However, this height reduces as decomposition progresses. When positioned on sloped terrain, the beds need to be put at an angle to the hillside (rather than having them parallel to it). This makes sure the beds do not receive unequal amounts of water. In most cases, it is useful to have the beds positioned against the prevailing wind direction. The raised bed can form light-duty swales, circles and mazes.[11][12] Mounds may also be made from alternating layers of wood, sod,[13] compost, straw, and soil. Although their construction is straightforward, planning is necessary to prevent steep slopes that would result in erosion."/>
+                    <Image Source="images\Hügelkultur\Hügelkultur1.png" ToolTip="Hügelkultur for Robust Organic Garden" Margin="3" Width="200" HorizontalAlignment="Right" Height="200"/>
+                    <TextBlock Height="110"  Margin="10,10,0,0" TextWrapping="Wrap" FontSize="13" Text="The mound is left to rest for several months before planting, although some advise for immediate planting. Anything can be grown on the raised beds, but if the bed will decompose/release its nutrients quickly (so long as it is not made of bulky materials like tree trunks), more demanding crops such as pumpkins, courgettes, cucumbers, cabbages, tomatoes, sweet corn, celery, or potatoes are grown in the first year, after which the bed is used for less demanding crops like beans, peas, and strawberries."/>
+                    <Image Source="images\Hügelkultur\Hügelkultur2.png" ToolTip="Hügelkultur a rotting resource" Margin="10,10,0,0" Width="200" HorizontalAlignment="Right" Height="200"/>
+                    <TextBlock Height="60" Width="350"  Margin="10,0,0,0" TextWrapping="Wrap" FontSize="13" Text="Lifespan of the Hügelkultur - The original German publications described the mounds as having a lifespan of 5–6 years, after which they had to be rebuilt from scratch."/>
+                    <TextBlock Height="110"  Margin="10,10,0,0" TextWrapping="Wrap" FontSize="13" Text="Hügelkultur mounds as solid earthworks. Hügelkultur beds can safely retain water in light-duty applications (for example, conserving the moisture of rain that falls on the bed), creating heavy-duty rainwater retention areas behind Hügelkultur beds on contour, to catch surface runoff from surrounding areas, can be dangerous. Some designers conflate the Hügelkultur bed's appearance with that of solid earthworks, but Hügelkultur beds cannot predictably control large amounts of stormwater in the way that solid earthworks can."/>
+                    <TextBlock Height="125"  Margin="10,10,0,0" TextWrapping="Wrap" FontSize="13" Text="Overfertilization, contamination of soil and water habitats :- Over-fertilized plants are said to have less flavor, and too much nitrogen can be consumed by eating certain plants which have been over-fertilised (e.g., spinach). Advocates state that overfertilization is a risk in the first year if woodchips are used, which will break down too fast. Instead raised beds made with whole logs release nutrients slowly over a period of years. It has been suggested that excessive use of decomposing organic matter in Hügelkultur could leach out and contaminate and disrupt soil and water habitats."/>
+
+
+                    <!--<Image Source="E:\Modules\Module VI - Advanced CS\images\Community\7.png" ToolTip="" Margin="3" Width="200" HorizontalAlignment="Right" Height="170"/>
+                    <TextBox Height="20" Width="500" BorderBrush="White" Margin="10,0,0,0" HorizontalAlignment="Right" TextWrapping="Wrap" FontSize="13" Text="Advantages of Community Gardening"/>
+                    <TextBox Height="630" Width="350" BorderBrush="White" Margin="20,0,0,0" TextWrapping="Wrap" FontSize="13" Text="Community gardens have several benefits to the people and the environment. These gardens create a sense of community among neighbors who are increasingly disconnected with each other. They create opportunities to provide healthy options in neighborhoods that are often food scarce. For example, in some remote rural areas, the nearest grocery store is prohibitively far away, and many residents rely on pre-packaged food from the gas stations and convenience stores. In these communities, such a garden is critical to the survival of the people in providing a well-rounded diet. The people working in the garden benefit from exercise and sunshine, as well as the therapeutic benefits of working in a garden. Weeding a garden is particularly effective in stress relief and provides mental health benefits to participants. Learning about the ways plants grow and the best conditions to help them thrive can provide the mental and intellectual stimulation of cultivating a new skill. Also, a community garden can change the culture of a neighborhood by providing a shared interest and activity that brings people together. One of the biggest benefits to a community garden is in creating a culture of self-sustainability. In a low-income neighborhood, a community garden may mean saving enough on groceries to provide for other household needs. People have become more and more separated from traditional food ways, and community gardens can replace the kind of independent living we once knew when everyone had their own backyard garden. Environmental benefits may be the increase of pollinator plants that can improve conditions for bees and other endangered pollinators. Plants also reduce the overall temperature compared to paved spaces, so these gardens are especially beneficial in urban areas. The environment of a community is improved by having an element of natural beauty so that rather than empty lots in some neighborhoods, the space between buildings can be filled with flowers or even food."/>
+                    <Image Source="E:\Modules\Module VI - Advanced CS\images\Community\6.png" ToolTip="" Margin="10" Width="190" HorizontalAlignment="Right" Height="250"/>
+                    <Image Source="E:\Modules\Module VI - Advanced CS\images\Community\3.png" ToolTip="" Margin="30,0,0,0" Width="400" HorizontalAlignment="Center" Height="170"/>
+                    <TextBox Height="20" Width="500" BorderBrush="White" Margin="10,0,0,0" HorizontalAlignment="Right" TextWrapping="Wrap" FontSize="13" Text="Rules for the Community Gardening"/>
+                    <TextBox Height="215" BorderBrush="White" Margin="20,0,0,0" HorizontalAlignment="Right" TextWrapping="Wrap" FontSize="13" Text="Because the community garden is an individualized structure, the 'rules' are entirely dependent on each individual garden space and determined by the organizer, or committee creating the gardens. It is important to get feedback from garden participants because the nature of a community garden is collective and their voices should be included. Once a garden space or location has been established, it may help to identify the population the garden hopes to serve. For example, a community garden located in a low-income neighborhood may be intended to serve the residents of that neighborhood. The community garden connected to a food bank or soup kitchen might serve the clients who need those services. A community garden may also serve to provide income potential to participants by providing a space where they can grow produce to sell at a farmer's market, or flowers to sell in bars and restaurants downtown. A community center or after-school group may create a community garden specifically catered to teaching youth about healthy eating and growing plants."/>-->
+                    <!--<Image Source="E:\Modules\Module VI - Advanced CS\images\Community\7.png" ToolTip="" Margin="3" Width="200" HorizontalAlignment="Right" Height="170"/>-->
+
+
+                </WrapPanel>
+            </ScrollViewer>
+        </Grid>
+
+    </Grid>
+</UserControl>

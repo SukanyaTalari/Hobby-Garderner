@@ -1,0 +1,87 @@
+﻿<UserControl x:Class="Wpf_Gardening_Project.Kitchen_Garden"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Wpf_Gardening_Project"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="660">
+    <Grid>
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="35"/>
+            <ColumnDefinition Width="620"/>
+            <ColumnDefinition Width="5"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Kitchen Garden Plants" Grid.Column="1" Grid.Row="0" Style="{StaticResource sty_heading1}" Margin="20,5,330,0"  Height="Auto" Width="Auto"/>
+
+        <Grid Grid.Row="1" Grid.Column="1">
+            <ScrollViewer CanContentScroll="True" Grid.Row="1" Grid.Column="1">
+                <WrapPanel Margin="10,10,10,10">
+                    <TextBlock Height="40"  Margin="10,0,0,0" TextWrapping="Wrap" FontSize="13" FontWeight="Bold" Text="Kitchen garden is the growing of fruits and   vegetables at the backyard of house by using kitchen waste water to stay healthy."/>
+                    <TextBlock Height="90"  Margin="10,7,0,0" TextWrapping="Wrap" FontSize="13" Text="It's very important to have a healthy diet. A healthy diet means a balanced mix of rice, bread, pulses, vegetables, herbs, fruit etc. Vegetables are a very important part of a good diet as they contain various nutrients for many body functions. For growing, energy and protection against disease, vegetables play an essential role. Vegetables are especially important for the young, and for pregnant and nursing women."/>
+                    <TextBlock Height="20" Width="500"  Margin="10,10,0,0" TextWrapping="Wrap" FontSize="13" FontWeight="Bold" Text="Benefits of Kitchen Gardening are"/>
+                    <TextBlock Height="20" Width="500"  Margin="10,7,0,0" TextWrapping="Wrap" FontSize="13" Text="1. To grow healthy, fresh vegetables ourself."/>
+                    <TextBlock Height="20" Width="500"  Margin="10,5,0,0" TextWrapping="Wrap" FontSize="13" Text="2. To save the cost of buying vegetables and herbs."/>
+                    <TextBlock Height="20" Width="500"  Margin="10,5,0,0" TextWrapping="Wrap" FontSize="13" Text="3. Waste resources such as sweepings, kitchen scraps and dirty water can be recycled onto the garden."/>
+                    <TextBlock Height="20" Width="500"  Margin="10,5,0,0" TextWrapping="Wrap" FontSize="13" Text="4. Wasteland around the house can be made productive."/>
+                    <TextBlock Height="20" Width="500"  Margin="10,10,0,0" TextWrapping="Wrap" FontSize="13" FontWeight="Bold" Text="Find some of the vegetable plants we can grow at home"/>
+
+
+
+                    <Button x:Name="btn_Tomatoes" Click="btn_Tomatoes_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Kit\Tomatoes.png" ToolTip="Tomatoes" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_Zucchini" Click="btn_Zucchini_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Kit\ZUCCHINI.png" ToolTip="Zucchini" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_BellPeppers" Click="btn_BellPeppers_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Kit\Bell Peppers.png" ToolTip="Bell Peppers" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_Cabbage" Click="btn_Cabbage_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Kit\Cabbage.png" ToolTip="Cabbage" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_Beans" Click="btn_Beans_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Kit\Beans.png" ToolTip="Beans" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_Lettuce" Click="btn_Lettuce_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Kit\Lettuce.png" ToolTip="Lettuce" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_BeetRoots" Click="btn_BeetRoots_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Kit\Beet Roots.png" ToolTip="Beet Roots" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_Carrots" Click="btn_Carrots_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Kit\Carrots.png" ToolTip="Carrots" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_Radishes" Click="btn_Radishes_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Kit\Radishes.png" ToolTip="Radishes" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_Mint" Click="btn_Mint_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Kit\Mint.png" ToolTip="Mint" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_Chillies" Click="btn_Chillies_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Kit\Chillies.png" ToolTip="Chillies" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_Corinder" Click="btn_Corinder_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Kit\Corinder.png" ToolTip="Corinder" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_Lemon" Click="btn_Lemon_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Kit\Lemon.png" ToolTip="Lemon" Height="170" Width="170"/>
+                    </Button>
+                    <Button x:Name="btn_Oregano" Click="btn_Oregano_Click" Margin="10,10,10,10" Background="White" BorderBrush="White">
+                        <Image Source="images\Kit\Oregano.png" ToolTip="Oregano" Height="170" Width="170"/>
+                    </Button>
+
+                </WrapPanel>
+            </ScrollViewer>
+        </Grid>
+
+
+    </Grid>
+</UserControl>
